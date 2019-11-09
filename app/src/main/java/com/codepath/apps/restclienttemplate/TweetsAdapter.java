@@ -37,6 +37,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
         Tweet tweet = tweets.get(position);
         holder.bind(tweet);
 
+
     }
 
     @Override
@@ -69,6 +70,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
         ImageView ivProfileIamge;
         TextView tvBody;
         TextView tvScreenName;
+        TextView timeStamp;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -76,6 +78,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
             ivProfileIamge = itemView.findViewById(R.id.ivProfileImage);
             tvBody = itemView.findViewById(R.id.tvBody);
             tvScreenName = itemView.findViewById(R.id.tvScreenName);
+            timeStamp = itemView.findViewById(R.id.timeStamp);
 
 
         }
@@ -85,6 +88,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
             tvBody.setText(tweet.body);
             tvScreenName.setText(tweet.user.name);
             Glide.with(context).load(tweet.user.profileImageUrl).into(ivProfileIamge);
+            timeStamp.setText(tweet.getFormattedTimestamp());
         }
     }
 }
