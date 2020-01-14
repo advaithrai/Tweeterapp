@@ -1,36 +1,22 @@
-# Project 2 - *Twitter App*
+ *Twitter App*
 
-**Twitterapp** is an android app that allows a user to view his Twitter timeline and post a new tweet. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
+**Tweeterapp** is an android app that allows a user to view his Twitter timeline and post a new tweet. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public). It also has the following functionalities:
 
-Time spent: **5** hours spent in total
 
-## User Stories
-
-The following **required** functionality is completed:
-
-- [ x] User can **compose and post a new tweet**
+  - [ x] User can **compose and post a new tweet**
   - [ x] User can click a “Compose” icon in the Action Bar on the top right
   - [ x] User can then enter a new tweet and post this to twitter
   - [ x] User is taken back to home timeline with **new tweet visible** in timeline
-  - [ ] Newly created tweet should be manually inserted into the timeline and not rely on a full refresh
   - [ x] User can **see a counter with total number of characters left for tweet** on compose tweet page
+  - [x ] Uses Parceler library to send object data between activities
+  - [ x] User can **pull down to refresh tweets timeline**
+  - [ x] Infinite pagination continues to add older tweets into the view as it is scrolled down
+  - [ x] A clicked tweet sends user to a detail page for the specified tweet
+  - [ x] Links posted in tweets are clickable and send user to another page
+  - [ x] Image smoothly transitions between main activity and the detail page
+  - [x ] User can open app offline and still see the last loaded tweets using persistance
 
-The following **optional** features are implemented:
 
-- [ x] User can **pull down to refresh tweets timeline**
-
-
-The following **bonus** features are implemented:
-
-
-- [x ] Use Parcelable instead of Serializable using the popular [Parceler library](http://guides.codepath.org/android/Using-Parceler).
-- (http://guides.codepath.org/android/Drawables#vector-drawables) where appropriate.
-- 
-- [ ] User can view following / followers list through any profile they view.
-- [ ] User can see embedded image media within the tweet detail view
-- [ ] Use the popular ButterKnife annotation library to reduce view boilerplate.
-- [ ] On the Twitter timeline, leverage the [CoordinatorLayout](http://guides.codepath.org/android/Handling-Scrolls-with-CoordinatorLayout#responding-to-scroll-events) to apply scrolling behavior that [hides / shows the toolbar](http://guides.codepath.org/android/Using-the-App-ToolBar#reacting-to-scroll).
-- [ ] User can **open the twitter app offline and see last loaded tweets**. Persisted in SQLite tweets are refreshed on every application launch. While "live data" is displayed when app can get it from Twitter API, it is also saved for use in offline mode.
 
 
 ## Video Walkthrough
@@ -40,10 +26,6 @@ Here's a walkthrough of implemented user stories:
 <img src='https://github.com/advaithrai/Tweetapp_2/blob/master/second%20tweet%20app%20thingamajig.gif?raw=true' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
-
-## Notes
-
-
 
 ## Open-source libraries used
 
