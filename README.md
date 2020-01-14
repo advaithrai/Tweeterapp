@@ -23,7 +23,7 @@
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/advaithrai/Tweetapp_2/blob/master/second%20tweet%20app%20thingamajig.gif?raw=true' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/advaithrai/Tweeterapp/blob/master/finaltwitgif.gif?raw=true' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
